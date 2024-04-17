@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+          h1 {
+            color: rgba(0, 0, 0, 0.265);
+            font-size: 100px;
+            margin-bottom: 0px;
+            margin-top: 1px;
+          }
+
+          * {
+            background-color: #5179e5;
+            
+          }
+      
+          p {
+            font-size: 24px;
+            margin-bottom: 0px;
+            margin-top: 15px;
+          }
+        </style>
+</head>
+<body>
+    <div class="container-1st-page">
+        <h1>User Profile</h1>
+        <p>Login: {{ data['login'] }}</p>
+        <p>Name: {{ data['name'] }}</p>
+        <p class="avatar">Avatar: <img src="{{ data['avatar_url'] }}" alt="Avatar"></p>
+        <p>Followers: {{ data['followers'] }}</p>
+        <p>Following: {{ data['following'] }}</p>
+        <p>Public Repos: {{ data['public_repos'] }}</p>
+    </div>
+</body>
+</html>
